@@ -108,11 +108,11 @@ Start with a stick you aren't using. If an AIBO stick, make a backup with the sa
 * Run the "StikZap" program on your CLIE. It will Check the stick for you. You can ignore the recommendations.
 * From the menu, pick "ZAP PMS". Answer "Yes" and your stick will now be a PMS stick.
 * Using a stick reader (or the CLIE in MSImport/DataImport mode), delete any old files and install a PMS personality and see if it works.
-* Suggestions: (especially for testing the first time)
-    - For the ERS-210/210A - RCodePlus 2.52A (210)
-    - For the ERS-220/220A - RCodePlus 2.52A (220)
-    - For the ERS-311/312/31L - RCodePlus 2.52A (31x)
-    - For the ERS-7 - RCODE7_YART703_E.zip 
+* Suggestions
+    - For the ERS-210/210A - [RCodePlus-2.52A-210](/personality/RCodePlus252A(210).zip)
+    - For the ERS-220/220A - [RCodePlus-2.52A-220](/personality/RCodePlus252A(220).zip)
+    - For the ERS-311/312/31L - [RCodePlus-2.52A-31x](/personality/RCodePlus252A(31x).zip)
+    - For the ERS-7 - [Rcode-7](/personality/RCODE7_YART703_E.zip)
 * Remove the stick from the stick reader (or CLIE) and put it in AIBO.
 * Boot AIBO, and see if it stretches and sit up.
 * If it fails to boot or doesn't stretch the stick you tried may not work in AIBO (or may have format problems).
@@ -121,3 +121,11 @@ Start with a stick you aren't using. If an AIBO stick, make a backup with the sa
 ### Special Case : untested CPU
 
 It has been tested on a small number of models, but StikZap is smart and will guess where necessary. If you test it on a newer model, it will tell you it is guessing. If the guess works, please email me with the results of the menu command `Guess Cpu` If it fails, please run the menu command `Save Cpu` with an (8 or 16MB) Aibo memory stick in the CLIE. It will create a file on the stick called `INTERNAL.BIN`. This file is the basis for future building-upon the platform.
+
+### Source Code
+
+The source code to StikZap is included below to show you generally how it works on the CLIE and that it won't work anywhere else. AIBO specific data (hardware and software keys) are not included in this version. It can be downloaded [here](/personality/StikZap_13_SRC.zip)
+
+It is a CodeWarrior project. CodeWarrior for PalmOS is a not-free development environment which has been discontinued. It can be adapted to work with free open-source tools, which is an on-going exercise for feature addition in context with [ideal](https://github.com/cartheur/ideal).
+
+This is a Palm and CLIE specific program that hacks into the memory stick driver. You can't use this source code to port it to other platforms like WinCE/PocketPC/MobilePC or other USB stick readers.

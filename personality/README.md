@@ -103,7 +103,7 @@ Start with a stick you aren't using. If an AIBO stick, make a backup with the sa
 ### Common Case: Make your own "PMS" stick
 Start with a stick you aren't using. If an AIBO stick, make a backup with the safety file (see above) and save it away somewhere on your PC. See above for other kinds of "blank" sticks you can use (ie. old pink stick, or old light blue sticks). After you have a good backup, you can `ZAP` it to make it a blank PMS stick.
 
-* If you care what was on the stick before, be sure you have a backup (see above)
+* If you care what was on the stick before, be sure you have a backup.
 * Insert the memory stick into your CLIE. The CLIE will usually beep.
 * Run the "StikZap" program on your CLIE. It will Check the stick for you. You can ignore the recommendations.
 * From the menu, pick "ZAP PMS". Answer "Yes" and your stick will now be a PMS stick.
@@ -112,7 +112,7 @@ Start with a stick you aren't using. If an AIBO stick, make a backup with the sa
     - For the ERS-210/210A - [RCodePlus-2.52A-210](/personality/RCodePlus252A(210).zip)
     - For the ERS-220/220A - [RCodePlus-2.52A-220](/personality/RCodePlus252A(220).zip)
     - For the ERS-311/312/31L - [RCodePlus-2.52A-31x](/personality/RCodePlus252A(31x).zip)
-    - For the ERS-7 - [Rcode-7](/personality/RCODE7_YART703_E.zip)
+    - For the ERS-7 - [RCode-7](/personality/RCODE7_YART703_E.zip)
 * Remove the stick from the stick reader (or CLIE) and put it in AIBO.
 * Boot AIBO, and see if it stretches and sit up.
 * If it fails to boot or doesn't stretch the stick you tried may not work in AIBO (or may have format problems).
